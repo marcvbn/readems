@@ -9,7 +9,6 @@ function showResponse(answer) {
         // Trigger Confetti
         triggerConfetti();
     } else {
-        responseMessage.textContent = "Aww... 😔 That's okay, I'll still always care about you! 💖";
         
         // Apply animation to the "No" button when clicked
         noButton.classList.add('movingNoButton');
@@ -23,7 +22,7 @@ function showResponse(answer) {
     
     // Disable the buttons after answering
     yesButton.disabled = true;
-    noButton.disabled = true;
+    noButton.disabled = false;
 }
 
 function triggerConfetti() {
